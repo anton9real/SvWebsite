@@ -59,6 +59,12 @@
       border-color: var(--accent);
     }
 
+    .toolbar option{
+      background-color: #0b1220;
+      border-color: #0b1220;
+      border-radius: 10px;
+    }
+
     main{ padding: 8px 24px 80px; }
     .grid{
       display:grid;
@@ -134,155 +140,148 @@
 </head>
 <body>
   <header>
-    <h1>Unsere Schülervertretung</h1>
-    <p>Ein kompaktes Raster mit drei Karten pro Reihe: jeweils ein Foto, der Name und die Aufgabe. Die Ansicht ist voll responsiv (1 / 2 / 3 Spalten je nach Bildschirmbreite).</p>
+    <h1>Eure Schülervertretung</h1>
+    <p>Herzlich Wilkommen auf der Website der Schülervertretung "SV-Change", hier kannst du unsere Mitglieder und ihre Aufgaben einsehen. Immoment wird an der Website noch gearbeitet, also schau mal regelmäßig vorbei um neue Features zu sehen. </p>
     <div class="toolbar" role="region" aria-label="Filter">
       <input id="search" type="search" placeholder="Suchen nach Name oder Aufgabe…" aria-label="Suchen" />
       <select id="filter" aria-label="Rolle filtern">
         <option value="">Alle Rollen</option>
-        <option>Schulsprecher</option>
-        <option>Stellv. Schulsprecher</option>
-        <option>Finanzen</option>
-        <option>Öffentlichkeitsarbeit</option>
-        <option>Event-Planung</option>
-        <option>Inklusion & Vielfalt</option>
+        <option>Schülersprecher und Technik</option>
+        <option>Stellv. Schülersprecher und Eventplaner</option>
+        <option>Social-Media</option>
+        <option>Kassenwart</option>
+        <option>Musikwart</option>
+        <option>Vertrauensschülerin</option>
+        <option>Schrüftführerrin und Zeit Organisatorin</option>
+        <option>Sportwart</option>
       </select>
     </div>
   </header>
 
   <main>
     <section class="grid" id="team" aria-label="Team Raster">
-      <!-- Karte 1 -->
-      <article class="card" data-role="Schulsprecher/in">
+      <!-- Tarik -->
+      <article class="card" data-role="Schülersprecher und Technik">
         <div class="avatar-wrap">
-          <img class="avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=1200&auto=format&fit=crop&q=60" alt="Porträt von Alex Müller" loading="lazy" />
-          <span class="badge">Schulsprecher/in</span>
+          <img class="avatar" src="/Bilder/Tarik.jpg" alt="Porträt von Tarik" loading="lazy" />
+          <span class="badge">Schülersprecher</span>
         </div>
         <div class="content">
-          <h3 class="name">Alex Müller</h3>
-          <p class="role">Schulsprecher/in</p>
-          <div class="socials">
-            <a class="chip" href="#" aria-label="Kontakt Alex">Kontakt</a>
+          <h3 class="name">Tarik</h3>
+          <p class="role">Schülersprecher und Technik</p>
+          <p class="role">Klasse 10b</p>
           </div>
         </div>
       </article>
 
-      <!-- Karte 2 -->
-      <article class="card" data-role="Stellv. Schulsprecher/in">
+      <!-- Noah -->
+      <article class="card" data-role="Stellv. Schülersprecher und Eventplaner">
         <div class="avatar-wrap">
-          <img class="avatar" src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=1200&auto=format&fit=crop&q=60" alt="Porträt von Sara Becker" loading="lazy" />
-          <span class="badge">Stellv. Schulsprecher/in</span>
+          <img class="avatar" src="/Bilder/Noah.jpg" alt="Porträt von Noah" loading="lazy" />
+          <span class="badge">Stellv. Schülersprecher</span>
         </div>
         <div class="content">
-          <h3 class="name">Sara Becker</h3>
-          <p class="role">Stellv. Schulsprecher/in</p>
-          <div class="socials">
-            <a class="chip" href="#">Kontakt</a>
+          <h3 class="name">Noah</h3>
+          <p class="role">Stellv. Schülersprecher und Eventplaner</p>
+          <p class="role">Klasse 10c</p>
           </div>
         </div>
       </article>
 
-      <!-- Karte 3 -->
-      <article class="card" data-role="Finanzen">
+      <!-- Fabio -->
+      <article class="card" data-role="Social-Media">
         <div class="avatar-wrap">
-          <img class="avatar" src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=1200&auto=format&fit=crop&q=60" alt="Porträt von Minh Nguyen" loading="lazy" />
-          <span class="badge">Finanzen</span>
+          <img class="avatar" src="/Bilder/Phabio.jpg" alt="Porträt von Fabio" loading="lazy" />
+          <span class="badge">Social-Media</span>
         </div>
         <div class="content">
-          <h3 class="name">Minh Nguyen</h3>
-          <p class="role">Finanzen</p>
-          <div class="socials">
-            <a class="chip" href="#">Kontakt</a>
+          <h3 class="name">Fabio</h3>
+          <p class="role">Social-Media</p>
+          <p class="role">Klasse 10c</p>
           </div>
         </div>
       </article>
 
-      <!-- Karte 4 -->
-      <article class="card" data-role="Öffentlichkeitsarbeit">
+      <!-- Malte -->
+      <article class="card" data-role="Kassenwart">
         <div class="avatar-wrap">
-          <img class="avatar" src="https://images.unsplash.com/photo-1545055006-77e6f2b8b596?w=1200&auto=format&fit=crop&q=60" alt="Porträt von Jonas Richter" loading="lazy" />
-          <span class="badge">Öffentlichkeitsarbeit</span>
+          <img class="avatar" src="/Bilder/Malte.jpg" alt="Porträt von Malte" loading="lazy" />
+          <span class="badge">Kassenwart</span>
         </div>
         <div class="content">
-          <h3 class="name">Jonas Richter</h3>
-          <p class="role">Öffentlichkeitsarbeit</p>
-          <div class="socials">
-            <a class="chip" href="#">Kontakt</a>
+          <h3 class="name">Malte</h3>
+          <p class="role">Kassenwart</p>
+          <p class="role">Klasse 10c</p>
           </div>
         </div>
       </article>
 
-      <!-- Karte 5 -->
-      <article class="card" data-role="Event-Planung">
+      <!-- Clara -->
+      <article class="card" data-role="Musikwart">
         <div class="avatar-wrap">
-          <img class="avatar" src="https://images.unsplash.com/photo-1544005316-04ce1aeb65f5?w=1200&auto=format&fit=crop&q=60" alt="Porträt von Lina Schubert" loading="lazy" />
-          <span class="badge">Event-Planung</span>
+          <img class="avatar" src="/Bilder/Clara.jpg" alt="Porträt von Clara" loading="lazy" />
+          <span class="badge">Musikwart</span>
         </div>
         <div class="content">
-          <h3 class="name">Lina Schubert</h3>
-          <p class="role">Event-Planung</p>
-          <div class="socials">
-            <a class="chip" href="#">Kontakt</a>
+          <h3 class="name">Clara</h3>
+          <p class="role">Musikwart</p>
+          <p class="role">Klasse 10b</p>
           </div>
         </div>
       </article>
 
-      <!-- Karte 6 -->
-      <article class="card" data-role="Inklusion & Vielfalt">
+      <!-- Rike -->
+      <article class="card" data-role="Vertrauensschülerin">
         <div class="avatar-wrap">
-          <img class="avatar" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=1200&auto=format&fit=crop&q=60" alt="Porträt von Emilia Wagner" loading="lazy" />
-          <span class="badge">Inklusion &amp; Vielfalt</span>
+          <img class="avatar" src="/Bilder/Rike.jpg" alt="Porträt von Rike" loading="lazy" />
+          <span class="badge">Vertrauensschülerin</span>
         </div>
         <div class="content">
-          <h3 class="name">Emilia Wagner</h3>
-          <p class="role">Inklusion &amp; Vielfalt</p>
-          <div class="socials">
-            <a class="chip" href="#">Kontakt</a>
+          <h3 class="name">Rike</h3>
+          <p class="role">Vertrauensschülerin</p>
+          <p class="role">Klasse 10b</p>
           </div>
         </div>
       </article>
 
-      <!-- Karte 7 -->
-      <article class="card" data-role="Öffentlichkeitsarbeit">
+      <!-- Leni -->
+      <article class="card" data-role="Vertrauensschülerin">
         <div class="avatar-wrap">
-          <img class="avatar" src="https://images.unsplash.com/photo-1520975916090-3105956dac38?w=1200&auto=format&fit=crop&q=60" alt="Porträt von David Brandt" loading="lazy" />
-          <span class="badge">Öffentlichkeitsarbeit</span>
+          <img class="avatar" src="/Bilder/Leni.jpg" alt="Porträt von Leni" loading="lazy" />
+          <span class="badge">Vertrauensschülerin</span>
         </div>
         <div class="content">
-          <h3 class="name">David Brandt</h3>
-          <p class="role">Öffentlichkeitsarbeit</p>
-          <div class="socials">
-            <a class="chip" href="#">Kontakt</a>
+          <h3 class="name">Leni</h3>
+          <p class="role">Vertrauensschülerin</p>
+          <p class="role">Klasse 10c</p>
           </div>
         </div>
       </article>
 
-      <!-- Karte 8 -->
-      <article class="card" data-role="Finanzen">
+      <!-- Josie -->
+      <article class="card" data-role="Schrüftführerrin und Zeit Organisatorin">
         <div class="avatar-wrap">
-          <img class="avatar" src="https://images.unsplash.com/photo-1535025183041-0991a59769fe?w=1200&auto=format&fit=crop&q=60" alt="Porträt von Noor Al-Karim" loading="lazy" />
-          <span class="badge">Finanzen</span>
+          <img class="avatar" src="/Bilder/Josie.jpg" alt="Porträt von Josie" loading="lazy" />
+          <span class="badge">Schrüftführerrin</span>
         </div>
         <div class="content">
-          <h3 class="name">Noor Al‑Karim</h3>
-          <p class="role">Finanzen</p>
-          <div class="socials">
-            <a class="chip" href="#">Kontakt</a>
+          <h3 class="name">Josie</h3>
+          <p class="role">Schrüftführerrin und Zeit Organisatorin</p>
+          <p class="role">Klasse 10b</p>
           </div>
         </div>
       </article>
 
-      <!-- Karte 9 -->
-      <article class="card" data-role="Event-Planung">
+      <!-- Finn -->
+      <article class="card" data-role="Sportwart">
         <div class="avatar-wrap">
-          <img class="avatar" src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=1200&auto=format&fit=crop&q=60" alt="Porträt von Paulina Kraus" loading="lazy" />
-          <span class="badge">Event-Planung</span>
+          <img class="avatar" src="/Bilder/Finn.jpg" alt="Porträt von Finn" loading="lazy" />
+          <span class="badge">Sportwart</span>
         </div>
         <div class="content">
-          <h3 class="name">Paulina Kraus</h3>
-          <p class="role">Event-Planung</p>
-          <div class="socials">
-            <a class="chip" href="#">Kontakt</a>
+          <h3 class="name">Finn</h3>
+          <p class="role">Sportwart</p>
+          <p class="role">Klasse 10c</p>
           </div>
         </div>
       </article>
